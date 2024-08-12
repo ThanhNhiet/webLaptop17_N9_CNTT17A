@@ -1,0 +1,28 @@
+
+.showcart{
+    position: fixed;
+    border-radius: 10px;
+    right: 0px;
+    top: 0px;
+    width: 40%;
+    padding: 10px;
+    color: aliceblue;
+    border: 1px black solid;
+    overflow-y: auto;
+    height: 300px;
+    z-index: 10;
+}
+.showcart .tr-line th, td{
+    border: 1px white solid;
+    padding: 5px 10px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px #ccc solid;
+    padding: 5px 10px;
+    text-align: center;
+}

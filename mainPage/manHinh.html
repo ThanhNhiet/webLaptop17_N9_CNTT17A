@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Màn hình</title>
+  <!-- <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">  -->
+  <script src="/js/jquery-3.6.4.min.js"></script>
+  <script src="/js/boostrap.js"></script>
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/GioHang.css" />
+  <link rel="stylesheet" href="/css/manhinh.css" />
+  <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <header id="header-placeholder">
+      <!-- header content -->
+    </header>
+    <nav id="nav-placeholder">
+      <!-- nav content -->
+    </nav>
+    <div style="background-color: chocolate" class="showcart" id="showcart">
+      <table style="border-collapse: collapse" id="tbl">
+        <thead>
+          <tr class="tr-line">
+            <th>Tên sản phẩm</th>
+            <th>Đơn giá</th>
+            <th>Lựa chọn</th>
+          </tr>
+        </thead>
+        <tbody id="giohang">
+          <tr class="tr-line">
+
+          </tr>
+        </tbody>
+        <tr class="tr-line">
+          <th colspan="1">Thành tiền</th>
+          <th colspan="2" id="thanhtien">0000</th>
+        </tr>
+        <button id="closecart" onclick="showcart()" class="fas fa-times" style="
+            position: relative;
+            top: 0px;
+            background-color: red;
+            color: #ffff;
+            font-size: 40px;
+            width: 58px;
+          "></button>
+      </table>
+    </div>
+
+    <menu id="banner-placeholder">
+      <!-- banner content -->
+    </menu>
+
+    <div class="content">
+      <div class="item">
+        <div class="banner">
+          <a href="/subPage/manHinh/mh1.html">
+            <img src="/image/manHinh/AOG.jpg" alt="" /></a>
+        </div>
+        <div class="form">
+          <h2 class="row-name" id="name1">Màng hình AOC</h2>
+        </div>
+        <div class="row-info">
+          <div class="money" id="money1">
+            <span>2099000đ</span>
+          </div>
+          <div class="shop">
+            <button type="button" id="btnThem1"><img src="/image/giohang.png" alt=""></button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="banner">
+          <a href="/subPage/manHinh/mh2.html">
+            <img src="/image/manHinh/asus.jpg" alt="" /></a>
+        </div>
+        <div class="form">
+          <h2 class="row-name" id="name2">Màn hình Asus TUF GAMING</h2>
+        </div>
+        <div class="row-info">
+          <div class="money" id="money2">
+            <span>2.299.000đ</span>
+          </div>
+          <div class="shop">
+            <button type="button" id="btnThem2"><img src="/image/giohang.png" alt=""></button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="banner">
+          <a href="/subPage/manHinh/mh3.html">
+            <img src="/image/manHinh/3.webp" alt="" /></a>
+        </div>
+        <div class="form">
+          <h2 class="row-name" id="name3">Màn hình HKC MB27V9 27" IPS 75Hz</h2>
+        </div>
+        <div class="row-info">
+          <div class="money" id="money3">
+            <span>1.499.000đ</span>
+          </div>
+          <div class="shop">
+            <button type="button" id="btnThem3"><img src="/image/giohang.png" alt=""></button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="banner">
+          <a href="/subPage/manHinh/mh4.html">
+            <img src="/image/manHinh/lenovo.jpg" alt="" /></a>
+        </div>
+        <div class="form">
+          <h2 class="row-name" id="name4">
+            Màn hình Lenovo L24q-35 24" IPS 2K 75Hz loa kép 2W
+          </h2>
+        </div>
+        <div class="row-info">
+          <div class="money" id="money4">
+            <span>3.199.000đ</span>
+          </div>
+          <div class="shop">
+            <button type="button" id="btnThem4"><img src="/image/giohang.png" alt=""></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="content">
+      <div class="item">
+        <div class="banner">
+          <a href="/subPage/manHinh/mh5.html">
+            <img src="/image/manHinh/LG.jpg" alt="" /></a>
+        </div>
+        <div class="form">
+          <h2 class="row-name" id="name5">Màn hình LG 24GN650-B 24</h2>
+        </div>
+        <div class="row-info">
+          <div class="money" id="money5">
+            <span>2.390.000đ</span>
+          </div>
+          <div class="shop">
+            <button type="button" id="btnThem5"><img src="/image/giohang.png" alt=""></button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="banner">
+          <a href="/subPage/manHinh/mh6.html">
+            <img src="/image/manHinh/philips-240v5q.jpg" alt="" /></a>
+        </div>
+        <div class="form">
+          <h2 class="row-name" id="name6">
+            Màn hình Philips 272E1GSJ 27" 144Hz Freesync
+          </h2>
+        </div>
+        <div class="row-info">
+          <div class="money" id="money6">
+            <span>3.999.000đ</span>
+          </div>
+          <div class="shop">
+            <button type="button" id="btnThem6"><img src="/image/giohang.png" alt=""></button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="banner">
+          <a href="/subPage/manHinh/mh7.html">
+            <img src="/image/manHinh/sonic.jpg" alt="" /></a>
+        </div>
+        <div class="form">
+          <h2 class="row-name" id="name7">
+            Màn hình ViewSonic VA2432-H 24" IPS 75Hz viền mỏng
+          </h2>
+        </div>
+        <div class="row-info">
+          <div class="money" id="money7">
+            <span>2.899.000đ</span>
+          </div>
+          <div class="shop">
+            <button type="button" id="btnThem7"><img src="/image/giohang.png" alt=""></button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="banner">
+          <a href="/subPage/manHinh/mh8.html">
+            <img src="/image/manHinh/dell.webp" alt="" />
+          </a>
+        </div>
+        <div class="form">
+          <h2 class="row-name" id="name8">Màn hình Dell E2722H 27" IPS</h2>
+        </div>
+        <div class="row-info">
+          <div class="money" id="money8">
+            <span>6.500.000đ</span>
+          </div>
+          <div class="shop">
+            <button type="button" id="btnThem8"><img src="/image/giohang.png" alt=""></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer-placeholder">
+      <!-- footer content -->
+    </footer>
+  </div>
+
+  <!-- Back to top -->
+  <button onclick="topFunction()" id="back-top" title="Go to top">
+    <img src="../image/back-top.png" width="64px" height="54" usemap="#backtop" />
+    <map name="#backtop">
+      <area shape="circle" coords="0, 30, 0" />
+    </map>
+  </button>
+  <script>
+    // Get the button
+    let mybutton = document.getElementById("back-top");
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    // When clicks the button
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+  <script src="/js/cart-js.js"></script>
+  <script src="/js/loadHeader_Nav_footer_V2.js"></script>
+</body>
+
+</html>

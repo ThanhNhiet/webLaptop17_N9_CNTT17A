@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đăng ký</title>
+        <link rel="stylesheet" href="../css/dki.css">
+        <script src="../js/boostrap.js"></script>
+        <link rel="stylesheet" href="../css/main.css" />
+        <link rel="stylesheet" href="../css/GioHang.css" />
+        <link rel="stylesheet" href="../home/banphim.html" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+              <div class="header--bank">
+                <div class="adr__hotline">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span class="address"
+                    >12 Nguyễn Văn Bảo, Q Gò Vấp, Hồ Chí Minh</span
+                  >
+                  <i class="fa-solid fa-phone-volume"></i>
+      
+                  <span class="hotline">
+                    Hotline: <strong>08 4654 9369</strong>
+                  </span>
+                </div>
+                <div class="menu--header">
+                  <ul class="list-menu">
+                    <li><a href="">Điều khoản</a></li>
+                    <li><a href="">Thanh toán</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                    <li class="giohang">
+                      <a onclick="showcart()"
+                        >Giỏ hàng<i class="fa-solid fa-cart-shopping"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </header>
+            <nav>
+              <div class="banker--menu">
+                <div class="menu-list">
+                  <ul>
+                    <li>
+                      <a class="logo" href="../home/home.html"
+                        ><img src="../image/logo-1.png" alt=""
+                      /></a>
+                    </li>
+                    <li><a href="../home/home.html">TRANG CHỦ</a></li>
+                    <li><a href="../home/gioiThieu.html">GIỚI THIỆU</a></li>
+                    <li>
+                      <a href="">SẢN PHẨM</a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="">
+                            <i class="fa-solid fa-laptop"></i>
+                            Macbook Pro Retina
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <i class="fa-solid fa-laptop"></i>
+                            Macbook air
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <i class="fa-solid fa-laptop"></i>
+                            Macbook 12 inch
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <i class="fa-solid fa-laptop"></i>
+                            Macbook Pro Touch
+                          </a>
+                        </li>
+                        <li>
+                          <a href="../home/manghinh.html">
+                            <i class="fa-solid fa-desktop"></i>
+                            Màn Hình
+                          </a>
+                        </li>
+                        <li>
+                          <a href="../home/banphim.html">
+                            <i class="fa fa-keyboard-o"></i>
+                            Bàn phím
+                          </a>
+                        </li>
+                        <li>
+                          <a href="../home/phukien.html">
+                            <i class="fa-solid fa-headphones"></i>
+                            Phụ Kiện
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <i class="fa-solid fa-gift"></i>
+                            Khuyến mãi
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="">TIN TỨC</a></li>
+                    <li>
+                      <a href="../thuthuat-html/ThuThuatHome.html"
+                        >GIẢI ĐÁP-THỦ THUẬT</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="button">
+                  <input
+                    type="search"
+                    name=""
+                    id=""
+                    placeholder="Tìm kiếm sản phẩm"
+                  />
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+              </div>
+            </nav>
+            <div style="background-color: chocolate" class="showcart" id="showcart">
+              <table style="border-collapse: collapse">
+                <thead>
+                  <tr class="tr-line">
+                
+                    <th>Tên sản phẩm</th>
+                    <th>Đơn giá</th>
+                    <th>Lựa chọn</th>
+                  </tr>
+                </thead>
+                <tbody id="giohang">
+                  <tr class="tr-line"></tr>
+                </tbody>
+                <tr class="tr-line">
+                  <th colspan="1">Thành tiền</th>
+                  <th colspan="2" id="thanhtien">0000</th>
+                </tr>
+                <button
+                  id="closecart"
+                  onclick="showcart()"
+                  class="fas fa-times"
+                  style="
+                    position: relative;
+                    top: 0px;
+                    background-color: red;
+                    color: #ffff;
+                    font-size: 40px;
+                    width: 58px;
+                  "
+                ></button>
+              </table>
+            </div>
+        <div class="containerDK">
+            <h1>Đăng ký</h1>
+            <form id="register-form">
+                <label for="register-name">Tên đăng nhập</label>
+                <input id="register-name" type="text" name="name">
+                <span id="register-name-error" style="color: red;"></span>
+                <label for="register-email">Email</label>
+                <input id="register-email" type="email" name="email">
+                <span id="register-email-error"></span>
+                <label for="register-password">Mật khẩu</label>
+                <input id="register-password" type="password" name="password">
+                <span id="register-password-error"></span>
+                <label for="register-confirm-password">Xác nhận mật khẩu</label>
+                <input id="register-confirm-password" type="password" name="confirm-password">
+                <span id="register-confirm-password-error"></span>
+                <button type="submit" class="btn">
+                    <a href="../home/dangnhap.html" style="text-decoration: none; color: black; font-size: 20px;">Đăng ký</a>
+                </button>
+            </form>
+            <p>
+                Bạn đã có tài khoản?
+                <a href="dangnhap.html">Đăng nhập</a>
+            </p>
+            <div id="success-message"></div>
+        </div>
+        <footer>
+            <div class="footer-1">
+              <ul class="cskh">
+                <h3>CHĂM SÓC KHÁCH HÀNG</h3>
+                <p><strong>0846549369</strong>: Hotline tư vấn</p>
+                <p><strong>12 345678</strong>: Tư vấn bán hàng</p>
+                <p>Thời gian làm việc: <strong>9h - 20h30</strong></p>
+                <p>Email: laptop@gmail.com</p>
+              </ul>
+              <ul class="htkh">
+                <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+                <li>QUY ĐỊNH SỬ DỤNG</li>
+                <li>Chính sách bảo mật</li>
+                <li>Điều khoản sử dụng</li>
+                <li>Hướng dẫn thanh toán</li>
+              </ul>
+              <ul class="csach">
+                <h3>CHÍNH SÁCH</h3>
+                <li>Chính sách bảo hành</li>
+                <li>Chính sách đổi trả hàng</li>
+                <li>Chính sách bảo mật</li>
+                <li>Điều khoản sử dụng</li>
+              </ul>
+              <ul class="mxh">
+                <h3>MẠNG XÃ HỘI</h3>
+              </ul>
+            </div>
+            <div class="footer-2">
+              <div class="vanban">
+                <h5>Mobile Store - Uy tín trong từng sản phẩm</h5>
+                <p>Công ty TNHH Mobile Store</p>
+                <p>Giấy phép ĐKHD số: 12345678</p>
+                <p>
+                  Địa chỉ:
+                  <strong>12 Nguyễn Văn Bảo, Q. Gò Vấp, Hồ Chí Minh</strong>
+                </p>
+              </div>
+              <div class="footer-img">
+                <img src="../image/map.png" alt="" />
+              </div>
+            </div>
+          </footer>
+        </div>
+        <script>
+          const mybutton1 = document.getElementById("button1");
+          mybutton1.addEventListener("click", function () {
+            mybutton1.style.backgroundColor = "red";
+            mybutton1.style.color = "#fff";
+            mybutton2.style.backgroundColor = "gray";
+            mybutton2.style.color = "black";
+          });
+          const mybutton2 = document.getElementById("button2");
+          mybutton2.addEventListener("click", function () {
+            mybutton1.style.backgroundColor = "gray";
+            mybutton1.style.color = "black";
+            mybutton2.style.backgroundColor = "red";
+            mybutton2.style.color = "#fff";
+          });
+        </script>
+    
+        <!-- Back to top -->
+        <button onclick="topFunction()" id="back-top" title="Go to top">
+          <img
+            src="../image/back-top.png"
+            width="64px"
+            height="54"
+            usemap="#backtop"
+          />
+          <map name="#backtop">
+            <area shape="circle" coords="0, 30, 0" />
+          </map>
+        </button>
+        <script>
+          // Get the button
+          let mybutton = document.getElementById("back-top");
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function () {
+            scrollFunction();
+          };
+          function scrollFunction() {
+            if (
+              document.body.scrollTop > 20 ||
+              document.documentElement.scrollTop > 20
+            ) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+          // When clicks the button
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+        </script>
+    
+        <script src="../js/cart-js.js"></script>
+        <script src="../js/dangki.js"></script>
+    </body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laptop</title>
+    <!-- <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">  -->
+    <script src="/js/jquery-3.6.4.min.js"></script>
+    <script src="/js/boostrap.js"></script>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/GioHang.css" />
+    <link rel="stylesheet" href="/css/laptop.css" />
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <header id="header-placeholder">
+            <!-- header content -->
+        </header>
+        <nav id="nav-placeholder">
+            <!-- nav content -->
+        </nav>
+        <div style="background-color: chocolate" class="showcart" id="showcart">
+            <table style="border-collapse: collapse" id="tbl">
+                <thead>
+                    <tr class="tr-line">
+                        <th>Tên sản phẩm</th>
+                        <th>Đơn giá</th>
+                        <th>Lựa chọn</th>
+                    </tr>
+                </thead>
+                <tbody id="giohang">
+                    <tr class="tr-line">
+
+                    </tr>
+                </tbody>
+                <tr class="tr-line">
+                    <th colspan="1">Thành tiền</th>
+                    <th colspan="2" id="thanhtien">0000</th>
+                </tr>
+                <button id="closecart" onclick="showcart()" class="fas fa-times" style="
+            position: relative;
+            top: 0px;
+            background-color: red;
+            color: #ffff;
+            font-size: 40px;
+            width: 58px;
+          "></button>
+            </table>
+        </div>
+
+        <menu id="banner-placeholder">
+            <!-- banner content -->
+        </menu>
+
+        <div class="content">
+            <div class="item">
+                <div class="banner">
+                    <a href="#">
+                        <img src="/image/laptop/acer-aspire-3-a315.jpg" alt="" /></a>
+                </div>
+
+                <div class="form">
+                    <h2 class="row-name" id="name1">Acer Aspire 3 A315 510P 32EF i3 N305 (NX.KDHSV.001)</h2>
+                    <table class="ram-rom">
+                        <tr>
+                            <td>Ram 8GB</td>
+                            <td>SSD 256GB</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="row-info">
+                    <div class="money" id="money1">
+                        <span>9.990.000đ</span>
+                    </div>
+                    <div class="shop">
+                        <button type="button" id="btnThem1"><img src="/image/giohang.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="banner">
+                    <a href="#">
+                        <img src="/image/laptop/msi-modern-15-b12mo-i5-625vn-glr-thumb-600x600.jpg" alt="" /></a>
+                </div>
+                <div class="form">
+                    <h2 class="row-name" id="name2">MSI Modern 15 B12MO i5 1235U (625VN)</h2>
+                    <table class="ram-rom">
+                        <tr>
+                            <td>Ram 8GB</td>
+                            <td>SSD 512GB</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row-info">
+                    <div class="money" id="money2">
+                        <span>13.990.000đ</span>
+                    </div>
+                    <div class="shop">
+                        <button type="button" id="btnThem2"><img src="/image/giohang.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="banner">
+                    <a href="#">
+                        <img src="/image/laptop/lenovo-ideapad-1-15alc7-r7-82r400c1vn-thumb-1-600x600.jpg" alt="" /></a>
+                </div>
+                <div class="form">
+                    <h2 class="row-name" id="name3">Lenovo Ideapad 1 15ALC7 R7 5700U (82R400C1VN)</h2>
+                    <table class="ram-rom">
+                        <tr>
+                            <td>Ram 16GB</td>
+                            <td>SSD 512GB</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row-info">
+                    <div class="money" id="money3">
+                        <span>13.990.000đ</span>
+                    </div>
+                    <div class="shop">
+                        <button type="button" id="btnThem3"><img src="/image/giohang.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="banner">
+                    <a href="#">
+                        <img src="/image/laptop/dell-vostro-15-3530-i3-v5i3465w1-thumb-600x600.jpg" alt="" /></a>
+                </div>
+                <div class="form">
+                    <h2 class="row-name" id="name4">
+                        Dell Vostro 15 3530 i3 1305U (V5I3465W1)
+                    </h2>
+                    <table class="ram-rom">
+                        <tr>
+                            <td>Ram 8GB</td>
+                            <td>SSD 512GB</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row-info">
+                    <div class="money" id="money4">
+                        <span>14.190.000đ</span>
+                    </div>
+                    <div class="shop">
+                        <button type="button" id="btnThem4"><img src="/image/giohang.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="content">
+            <div class="item">
+                <div class="banner">
+                    <a href="#">
+                        <img src="/image/laptop/asus-vivobook-x1404za-i5-nk376w-thumb-600x600.jpg" alt="" /></a>
+                </div>
+                <div class="form">
+                    <h2 class="row-name" id="name5">Asus Vivobook X1404ZA i5 1235U (NK376W)</h2>
+                    <table class="ram-rom">
+                        <tr>
+                            <td>Ram 16GB</td>
+                            <td>SSD 512GB</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row-info">
+                    <div class="money" id="money5">
+                        <span>16.490.000đ</span>
+                    </div>
+                    <div class="shop">
+                        <button type="button" id="btnThem5"><img src="/image/giohang.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="banner">
+                    <a href="#">
+                        <img src="/image/laptop/hp-15s-fq5162tu-i5-7c134pa-thumb-600x600.jpg" alt="" /></a>
+                </div>
+                <div class="form">
+                    <h2 class="row-name" id="name6">
+                        HP 15s fq5162TU i5 1235U (7C134PA)
+                    </h2>
+                    <table class="ram-rom">
+                        <tr>
+                            <td>Ram 8GB</td>
+                            <td>SSD 512GB</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row-info">
+                    <div class="money" id="money6">
+                        <span>18.890.000đ</span>
+                    </div>
+                    <div class="shop">
+                        <button type="button" id="btnThem6"><img src="/image/giohang.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="banner">
+                    <a href="#">
+                        <img src="/image/laptop/dell-inspiron-16-5640-core-7-n6i7512w1-thumb-600x600.jpg" alt="" /></a>
+                </div>
+                <div class="form">
+                    <h2 class="row-name" id="name7">
+                        Dell Inspiron 16 5640 Core 7 150U (N6I7512W1)
+                    </h2>
+                    <table class="ram-rom">
+                        <tr>
+                            <td>Ram 16GB</td>
+                            <td>SSD 1TB</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row-info">
+                    <div class="money" id="money7">
+                        <span>29.990.000đ</span>
+                    </div>
+                    <div class="shop">
+                        <button type="button" id="btnThem7"><img src="/image/giohang.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="banner">
+                    <a href="#">
+                        <img src="/image/laptop/msi-creator-m16-hx-c14vfg-i7-040vn-thumb-600x600.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="form">
+                    <h2 class="row-name" id="name8">MSI Creator M16 HX C14VFG i7 14700HX (040VN)</h2>
+                    <table class="ram-rom">
+                        <tr>
+                            <td>Ram 32GB</td>
+                            <td>SSD 1TB</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row-info">
+                    <div class="money" id="money8">
+                        <span>42.490.000đ</span>
+                    </div>
+                    <div class="shop">
+                        <button type="button" id="btnThem8"><img src="/image/giohang.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer-placeholder">
+            <!-- footer content -->
+        </footer>
+    </div>
+
+    <!-- Back to top -->
+    <button onclick="topFunction()" id="back-top" title="Go to top">
+        <img src="../image/back-top.png" width="64px" height="54" usemap="#backtop" />
+        <map name="#backtop">
+            <area shape="circle" coords="0, 30, 0" />
+        </map>
+    </button>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("back-top");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When clicks the button
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <script src="/js/cart-js.js"></script>
+    <script src="/js/loadHeader_Nav_footer_V2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu</title>
+    <script src="/js/boostrap.js"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/GioHang.css">
+    <link rel="stylesheet" href="/css/gioithieu.css">
+</head>
+
+<body>
+    <div class="container">
+        <header id="header-placeholder">
+            <!-- header content -->
+        </header>
+        <nav id="nav-placeholder">
+            <!-- nav content -->
+        </nav>
+        <div style="background-color: chocolate" class="showcart" id="showcart">
+            <!-- cart content -->
+        </div>
+        <div id="banner">
+            <div class="box-left">
+                <h2>
+                    <span>Lap 17 Store</span>
+                </h2>
+                <p>Chúng tôi chuyên cung cấp cho quý khách hàng những dòng máy tính, thiết bị điện tử chính hãng và chất
+                    lượng cao</p>
+
+                <ul>
+                    <h3>Hãy đến với chúng tôi vì:</h3>
+                    <li>Đa dạng các thiết bị điện tử, náy tính đến từ nhiều hãng sản xuất nổi tiếng</li>
+                    <li>Nhân viên thân thiện, nghiệp vụ chuyên nghiệp</li>
+                    <li>Dịch vụ chăm sóc khách hàng 24/7</li>
+                    <li>Chính sách trả góp 0% lãi suất, đổi trả sản phẩm miễn phí trong 7 ngày</li>
+                    <li>Thường xuyên tổ chức các chương trình khuyến mãi</li>
+                </ul>
+            </div>
+        </div>
+        <div id="outercontent">
+            <div id="team">
+                <h2>Những người sáng lập</h2>
+                <ul id="list-man">
+                    <div class="item">
+                        <img src="../image/gioiThieu/avatar_nhiet.png" width="290px" height="290px" alt="">
+                        <div class="name">Phạm Lê Thanh Nhiệt</div>
+                        <div class="desc">21051451</div>
+                        <div class="price">nhiethiz@gmail.com</div>
+                    </div>
+
+
+                    <div class="item">
+                        <img src="../image/gioiThieu/avatar_phat.png" width="290px" height="290px" alt="">
+                        <div class="name">Nguyễn Hoàng Phát</div>
+                        <div class="desc">21050181</div>
+                        <div class="price">phatnguyenhoang2811@gmail.com</div>
+                    </div>
+
+
+                    <div class="item">
+                        <img src="../image/gioiThieu/avatar_Phi.png" width="290px" height="290px" alt="">
+                        <div class="name">Phạm Hoàng Phi</div>
+                        <div class="desc">21032001</div>
+                        <div class="price">phamhoangphi1303@gmail.com</div>
+                    </div>
+                    <div class="item">
+                        <img src="../image/gioiThieu/avatar_nguyen.png" width="290px" height="290px" alt="">
+                        <div class="name">Nguyễn Ngọc Thanh Nguyên</div>
+                        <div class="desc">21116601</div>
+                        <div class="price">lebaobinh20036@gmail.com</div>
+                    </div>
+
+                </ul>
+
+            </div>
+
+            <div id="imgstore">
+                <h2>Hình ảnh cửa hàng</h2>
+                <div id="imgstore-body">
+                    <div class="prev">
+                        <img src="../image/up.png" alt="" style="cursor: pointer;" title="down">
+                    </div>
+                    <ul id="list-imgstore">
+                        <li class="item">
+                            <img src="../image/gioiThieu/imgstore_1.png" alt="">
+                        </li>
+                        <li class="item">
+                            <img src="../image/gioiThieu/imgstore_2.png" alt="">
+                        </li>
+                        <li class="item">
+                            <img src="../image/gioiThieu/imgstore_3.png" alt="">
+                        </li>
+                        <li class="item">
+                            <img src="../image/gioiThieu/imgstore_4.png" alt="">
+                        </li>
+                        <li class="item">
+                            <img src="../image/gioiThieu/imgstore_5.png" alt="">
+                        </li>
+                    </ul>
+                    <div class="next">
+                        <img src="../image/down.png" alt="" style="cursor: pointer;" title="down">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer-placeholder">
+            <!-- footer content -->
+        </footer>
+    </div>
+
+    <!-- Back to top -->
+    <button onclick="topFunction()" id="back-top" title="Go to top">
+        <img src="../image/back-top.png" width="64px" height="54" usemap="#backtop">
+        <map name="#backtop">
+            <area shape="circle" coords="0, 30, 0">
+        </map>
+    </button>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("back-top");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When clicks the button
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+    <script src="/js/cart-js.js"></script>
+    <script src="/js/script_gioithieu.js"></script>
+    <script src="/js/loadHeader_Nav_footer.js"></script>
+</body>
+
+</html>

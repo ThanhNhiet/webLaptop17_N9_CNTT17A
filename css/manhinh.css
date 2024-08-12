@@ -1,0 +1,74 @@
+/*--CONTENT--*/
+.content {
+    display: flex;
+    margin-left: 12%;
+    padding: 1px 16px;
+    height: auto;
+    margin-right: 12%;
+    margin: auto;
+    width: 1200px;
+    justify-content: space-around;
+    /* background-image: url(../image/background-content.jpg) */
+}
+
+.item {
+    width: 250px;
+    height: 280px;
+
+    margin: 20px;
+
+}
+
+.item {
+    box-shadow: 0 0 3px;
+}
+
+.content .item:hover {
+    border: 0.2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.07);
+    transition: transform 0.3s ease-in-out;
+}
+
+.item .banner img {
+    width: 245px;
+    height: 130px;
+    padding: 10px;
+
+}
+
+.content img {
+    padding-left: 0px;
+}
+
+.item .form .row-name {
+    font-weight: bold;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.row-info {
+    padding-top: 20px;
+
+}
+
+.row-info .money span {
+    font-size: 25px;
+    float: left;
+    color: brown;
+    font-weight: bold;
+    margin: 10px;
+
+}
+
+.row-info .shop {
+    float: left;
+    margin-left: 60px;
+
+}
+
+/* .row-info .shop :hover{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+  } */

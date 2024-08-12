@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../css/bootstrap/bootstrap.css"> -->
+    <script src="/js/boostrap.js"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/GioHang.css">
+    <link rel="stylesheet" href="/css/subpage.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <header id="header-placeholder">
+            <!-- header content -->
+        </header>
+        <nav id="nav-placeholder">
+            <!-- nav content -->
+        </nav>
+        <div style="background-color: chocolate" class="showcart" id="showcart">
+            <!-- cart content -->
+        </div>
+        <menu id="banner-placeholder">
+            <!-- banner content -->
+        </menu>
+
+        <div class="content">
+
+            <div class="wapper_review_product">
+                <div class="container_review_product">
+                    <div class="review">
+                        <table id="c_p_12">
+                            <tr>
+                                <td id="img_sp_l"><img src="/image/phukien/8.webp"></td>
+                                <td>
+                                    <h3 id="tsp">Tai nghe choàng đầu có mic Gaming Soundmax AH335</h3>
+                                    <!-- <p id="gsp">Giá: 3.450.000đ</p> -->
+                                    <p> Thông tin chung:</p>
+                                    <p>- Xuất xứ: Trung Quốc</p>
+                                    <p> - Bảo hành: 12 tháng</p>
+                                    <p>- Cách kết nối : Jack 3.5 mm
+                                    </p>
+                                    <br>
+                                    <!-- <form action="" methos="post">
+                                            <div class="box_form_buy">
+                                            <button class="mini_in" type="button" onclick="min()">-</button>
+                                            <input id="number_in" type="number" value="1"></input>
+                                            <button class="max_in" type="button" onclick="max()">+</button>
+                                            </div>
+                                            <input id="ThemSP" type="button" value="Thêm vào giỏ"></input>
+                                            <input id="BuySp" class="buy101" type="button" value="Mua"></input>
+                                    </form> -->
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="infor_product">
+                        <div id="content">
+                            <h3>Mô tả</h3>
+                            <h3>Sản phẩm</h3>
+                            <h4>Đặc điểm nổi bật</h4>
+                            <p>Không chỉ đẹp với thiết kế đèn LED RGB rực rỡ, tai nghe chơi game SoundMax AH-335 còn có
+                                kiểu dáng hiện đại, đeo lâu không mệt và chất âm đỉnh cao để cung cấp một không gian
+                                giải trí riêng cho mỗi game thủ.
+
+                                Thiết kế trẻ trung, hiện đại
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="container_review_infor_sp">
+
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer-placeholder">
+            <!-- footer content -->
+        </footer>
+    </div>
+
+    <!-- Back to top -->
+    <button onclick="topFunction()" id="back-top" title="Go to top">
+        <img src="/image/back-top.png" width="64px" height="54" usemap="#backtop">
+        <map name="#backtop">
+            <area shape="circle" coords="0, 30, 0">
+        </map>
+    </button>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("back-top");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When clicks the button
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <script src="/js/cart-js.js"></script>
+    <script src="/js/loadHeader_Nav_footer.js"></script>
+</body>
+
+</html>
